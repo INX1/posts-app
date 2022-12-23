@@ -4,7 +4,7 @@ import { forkJoin, map, Observable } from 'rxjs';
 import { Post } from 'src/app/core/models/post';
 import { Comment } from 'src/app/core/models/comment';
 import { PostsService } from 'src/app/core/services/posts/posts.service';
-import { UsersService } from 'src/app/core/services/users.service';
+import { UsersService } from 'src/app/core/services/users/users.service';
 
 @Component({
   selector: 'app-posts-container',

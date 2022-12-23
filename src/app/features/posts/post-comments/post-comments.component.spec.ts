@@ -3,7 +3,6 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { PostCommentsComponent } from './post-comments.component';
 import { PostsService } from 'src/app/core/services/posts/posts.service';
 import { Post } from 'src/app/core/models/post';
-import { Comment } from 'src/app/core/models/comment';
 import { of } from 'rxjs';
 
 describe('PostCommentsComponent', () => {

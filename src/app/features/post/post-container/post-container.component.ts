@@ -4,7 +4,7 @@ import { first, forkJoin, of, switchMap } from 'rxjs';
 import { Post } from 'src/app/core/models/post';
 import { PostsService } from 'src/app/core/services/posts/posts.service';
 import { Comment } from 'src/app/core/models/comment';
-import { UsersService } from 'src/app/core/services/users.service';
+import { UsersService } from 'src/app/core/services/users/users.service';
 import { User } from 'src/app/core/models/user';
 
 @Component({

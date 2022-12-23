@@ -7,7 +7,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 import { PostsService } from 'src/app/core/services/posts/posts.service';
-import { UsersService } from 'src/app/core/services/users.service';
+import { UsersService } from 'src/app/core/services/users/users.service';
 import { PostContainerComponent } from './post-container.component';
 import { Post } from 'src/app/core/models/post';
 import { User } from 'src/app/core/models/user';

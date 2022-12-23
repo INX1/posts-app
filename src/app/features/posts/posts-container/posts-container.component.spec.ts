@@ -2,13 +2,10 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
-import { of } from 'rxjs';
 import { PostsContainerComponent } from './posts-container.component';
 import { PostsService } from 'src/app/core/services/posts/posts.service';
-import { UsersService } from 'src/app/core/services/users.service';
-import { User } from 'src/app/core/models/user';
+import { UsersService } from 'src/app/core/services/users/users.service';
 import { Post } from 'src/app/core/models/post';
-import { Comment } from 'src/app/core/models/comment';
 
 describe('PostsContainerComponent', () => {
   let component: PostsContainerComponent;
