@@ -1,0 +1,52 @@
+nav {
+  background: #2d2e2e;
+  height: 100%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+      }
+
+      .activated {
+        background-color: #00a8ff;
+      }
+    }
+  }
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-icon {
+  padding: 0;
+  width: 20px;
+}

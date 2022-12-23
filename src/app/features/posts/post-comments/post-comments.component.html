@@ -1,0 +1,13 @@
+<app-post 
+  [post]="post"
+  [toggleComments]="toggleComments"
+  [toggleCommentsText]="toggleCommentsText"
+  (itemClick)="onPostClick()" 
+  (showCommentsClick)="showComments($event)">
+</app-post>
+<ng-container *ngIf="toggleComments">
+  <ng-container *ngFor="let comment of comments$ | async">
+    <app-comment [comment]="comment"></app-comment>
+  </ng-container>
+</ng-container>
+

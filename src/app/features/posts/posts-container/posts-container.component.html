@@ -1,0 +1,27 @@
+<h1>Posts</h1>
+
+<div class="search-hero search-input-wrapper">
+  <label for="search"></label>
+  <input class="form-control" type="text" name="search" id="search" [(ngModel)]="searchTerm" autocomplete="off"
+    placeholder="Search by Title or Author name">
+</div>
+
+<ul>
+  <ng-container *ngIf="posts$ | async as posts; else loading">
+    <cdk-virtual-scroll-viewport appendOnly itemSize="100" class="virtual-scroll">
+    <li *cdkVirtualFor="let post of posts | searchFilter:searchTerm">
+      <app-post-comments
+        [post]="post"
+        (itemClick)="openPostInNewWindow($event)" 
+      >
+      </app-post-comments>
+    </li>
+    </cdk-virtual-scroll-viewport>
+  </ng-container>
+</ul>
+
+<ng-template #loading>
+  <div class="loading-text">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+</ng-template>

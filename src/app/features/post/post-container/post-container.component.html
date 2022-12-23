@@ -1,0 +1,21 @@
+<h1>Post</h1>
+
+<ng-container *ngIf="!isLoading else loading">
+  <app-post
+    [post]="post"
+    [hideShowCommentsButton]="true"
+  >
+  </app-post>
+  <ng-container *ngFor="let comment of comments">
+    <app-comment
+      [comment]="comment"
+    >
+    </app-comment>
+  </ng-container>
+</ng-container>
+
+<ng-template #loading>
+  <div class="loading-text">
+      <app-loading-spinner></app-loading-spinner>
+  </div>
+</ng-template>

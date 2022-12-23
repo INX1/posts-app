@@ -1,0 +1,40 @@
+.posts-search {
+  margin-bottom: 8px;
+}
+
+.loading-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.search-hero {
+  max-width: 500px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.search-hero input {
+  -moz-box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .1);
+  color: #6c757d;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 8px 8px 40px;
+  width: calc(100% - 32px);
+  line-height: normal;
+}
+
+.form-control {
+  box-shadow: 0 10px 40px 0 #B0C1D9;
+}
+
+.virtual-scroll{
+  height: 100vh;
+  margin-left: 50px;
+  display: flex;
+ }
